@@ -7,8 +7,7 @@ Acesta este un program simplu în Java pentru gestionarea informațiilor despre 
 - [Utilizare](#utilizare)
 - [Clasa `persoana`](#clasa-persoana)
 - [Clasa `main`](#clasa-main)
-- [Contribuții](#contribuții)
-- [Licență](#licență)
+
 
 ## Introducere
 Acest program în Java este conceput pentru a gestiona și calcula informații despre persoane. Puteți introduce date pentru mai multe persoane, inclusiv numele lor, vârsta și alte detalii, și acesta calculează vârsta mediană dintre ele.
