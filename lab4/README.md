@@ -39,8 +39,4 @@ Clasa `main` conține metoda `main` și se ocupă de interacțiunea cu utilizato
 - `public static void main(String[] args)`: Metoda principală a programului care inițializează aplicația și permite utilizatorilor să introducă date pentru mai multe persoane. De asemenea, calculează și afișează vârsta mediană a acestora.
 - `private static int calculMedie(persoana[] persoane)`: Metoda privată care calculează vârsta mediană a persoanelor dintr-un tablou de obiecte `persoana`.
 
-## Contribuții
-Dacă doriți să contribuiți la acest proiect, nu ezitați să deschideți probleme (issues), să creați solicitări de extragere (pull requests) sau să faceți sugestii pentru îmbunătățiri.
 
-## Licență
-Acest proiect este licențiat sub Licența MIT. Consultați fișierul [LICENSE](LICENSE) pentru detalii.
