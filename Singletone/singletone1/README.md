@@ -1,18 +1,17 @@
-```java
 package singletone1;
 
 public class Logger {
-    // Private static variable to store the unique instance of the Logger class
+    // Variabilă statică privată care stochează instanța unică a clasei Logger
     private static Logger instance;
 
-    // Constructor
-    // The Logger class constructor is private, which means objects from outside the class cannot be created directly. It initializes the Logger instance and displays an initialization message.
+    // ## Constructor
+    // Constructorul clasei Logger este privat, ceea ce înseamnă că obiecte din afara clasei nu pot fi create direct. Acesta inițializează instanța Logger și afișează un mesaj de inițializare.
     private Logger() {
-        System.out.println("Logger initialized");
+        System.out.println("Logger inițializat");
     }
 
-    // Singleton
-    // The static getInstance method provides the unique instance of the Logger class using the Singleton pattern. If there is no instance yet, a new one is created; otherwise, the existing instance is returned.
+    // ## Singleton
+    // Metoda statică getInstance furnizează instanța unică a clasei Logger folosind modelul Singleton. Dacă nu există încă o instanță, se creează una nouă; altfel se returnează instanța existentă.
     public static Logger getInstance() {
         if (instance == null) {
             instance = new Logger();
@@ -20,10 +19,11 @@ public class Logger {
         return instance;
     }
 
-    // Logging Messages
-    // The log method allows for logging messages. It displays the specified message with the "Log: " prefix.
+    // ## Înregistrarea mesajelor
+    // Metoda log permite înregistrarea mesajelor. Ea afișează mesajul specificat împreună cu prefixul "Log: ".
     public void log(String message) {
         System.out.println("Log: " + message);
     }
 }
+
 
