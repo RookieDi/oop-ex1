@@ -1,6 +1,4 @@
 
-Acum puteți utiliza aplicația așa cum este descris în secțiunile de mai jos.
-
 ## Componentele Codului
 
 ### Clasa BazaDate
@@ -34,11 +32,7 @@ Clasa `BazaDate` are un constructor care vă permite să creați o nouă persoan
 
 Clasa `main` este punctul de intrare al aplicației. Furnizează o interfață bazată pe meniu pentru interacțiunea cu obiecte `BazaDate`. Puteți adăuga, valida vârsta, actualiza adresele, actualiza numele complet, genera adrese de e-mail și afișa informații.
 
-#### Cum să Utilizați
 
-1. Rulați aplicația așa cum este descris în secțiunea "Începerea Utilizării".
-2. Alegeți o opțiune din meniu introducând numărul corespunzător.
-3. Urmați indicațiile pentru a efectua operația selectată.
 
 ### Clasa permis
 
@@ -54,12 +48,4 @@ Clasa `permis` are mai mulți constructori pentru crearea unui obiect de permis 
 - `setModel()`, `setColor()`, `setTip()`: Metode de stabilire a valorilor atributelor.
 - `toString()`: Generează o reprezentare sub formă de șir a permisului de conducere.
 
-## Cum să Utilizați
 
-1. Rulați aplicația așa cum este descris în secțiunea "Începerea Utilizării".
-2. Utilizați meniul pentru a selecta operația dorită.
-3. Urmați indicațiile pentru a introduce informații sau pentru a vizualiza înregistrările.
-
-Nu ezitați să contribuiți sau să modificați acest proiect după nevoie. Dacă întâmpinați probleme sau aveți întrebări, vă rugăm să deschideți o problemă în acest depozit.
-
-Bucurați-vă de utilizarea Sistemului de Management al Informațiilor Personale!
