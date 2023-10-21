@@ -76,4 +76,4 @@ Clasa `ChocAmor` este derivată din clasa `CandyBox` și reprezintă un tip spec
 
 ---
 
-Aceasta este o structură de bază pentru documentarea claselor Java folosind Markdown în limba română. Puteți adăuga mai multe detalii, explicații și exemple după necesitate pentru a face documentația mai cuprinzătoare.
+
