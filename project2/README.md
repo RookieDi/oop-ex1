@@ -12,8 +12,6 @@ This documentation provides an overview of the "Notification-Tasker" Java applic
    - [Installation](#installation)
 3. [Usage](#usage)
 4. [Features](#features)
-5. [Contributing](#contributing)
-6. [License](#license)
 7. [Code Documentation](#code-documentation)
    - [Task Class](#task-class)
    - [INotification Interface](#inotification-interface)
