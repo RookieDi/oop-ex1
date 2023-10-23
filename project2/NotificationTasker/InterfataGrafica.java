@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import buttons.*;
 
 public class InterfataGrafica {
     public static void main(String[] args) {
@@ -22,8 +23,8 @@ public class InterfataGrafica {
 
 
         // Lista de task-uri
-        DefaultListModel<Task> taskListModel = new DefaultListModel<>();
-        JList<Task> taskList = new JList<>(taskListModel);
+        final DefaultListModel<Task> taskListModel = new DefaultListModel<>();
+        final JList<Task> taskList = new JList<>(taskListModel);
         JScrollPane taskJScrollPane = new JScrollPane(taskList);
 
         // Add task list with GridBagConstraints
@@ -65,12 +66,11 @@ public class InterfataGrafica {
         buttonConstraints.gridwidth=1;
         panel.add(addTask,buttonConstraints);
 
+        AddTaskButtonCustomizer.customizeButton(addTask);
 
 
-        // Customize button appearance
 
-        addTask.setBackground(Color.GREEN);
-        addTask.setForeground(Color.WHITE);
+
 
 
 
@@ -89,8 +89,7 @@ addTask.addActionListener(new ActionListener() {
         buttonConstraints.gridx = 0;
         buttonConstraints.gridy = 3;
         buttonConstraints.gridwidth = 2;
-        statusB.setBackground(Color.GRAY);
-        statusB.setForeground(Color.BLUE);
+
         panel.add(statusB, buttonConstraints);
 
 
@@ -102,12 +101,15 @@ addTask.addActionListener(new ActionListener() {
         buttonConstraints.gridx = 1;
         buttonConstraints.gridy=2;
         buttonConstraints.gridwidth=0;
-       // buttonConstraints.fill = GridBagConstraints.HORIZONTAL;
+                            //pachet buttons
+
+                DeleteTaskButtonCustomizer.customizeButton(deleteTask);
+                StatusButtonCustomizer.customizeButton(statusB);
+
         panel.add(deleteTask,buttonConstraints);
 
         panel.revalidate();
-        deleteTask.setBackground(Color.RED);
-        deleteTask.setForeground(Color.WHITE);
+
         deleteTask.addActionListener(new ActionListener() {
             @Override
 
@@ -151,6 +153,9 @@ addTask.addActionListener(new ActionListener() {
                 }
             }
         });
+
+
+
         frame.setVisible(true);
     }
 }
