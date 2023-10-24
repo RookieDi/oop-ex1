@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import buttons.*;
 
+
 public class InterfataGrafica {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Notification-Tasker");
@@ -23,7 +24,7 @@ public class InterfataGrafica {
 
 
         // Lista de task-uri
-        final DefaultListModel<Task> taskListModel = new DefaultListModel<>();
+         final DefaultListModel<Task> taskListModel = new DefaultListModel<>();
         final JList<Task> taskList = new JList<>(taskListModel);
         JScrollPane taskJScrollPane = new JScrollPane(taskList);
 
@@ -79,10 +80,24 @@ addTask.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String descriere = descriereTask.getText();
                 if (!descriere.isEmpty()) {
+                       if (descriere.matches(".*[a-zA-Z].*")) {
+                Task task = new Task(descriere);
+                taskListModel.addElement(task);
+                descriereTask.setText("");
+                task.finalization();
+            } else {
+                // Throw an exception or display an error message
+                JOptionPane.showMessageDialog(frame, "Task description must contain at least one letter.", "Error", JOptionPane.ERROR_MESSAGE);
+                // You can throw an exception here if needed
+            }
+        } else {
+            // Show an error message if the description is empty
+            JOptionPane.showMessageDialog(frame, "Task description is empty.", "Error", JOptionPane.ERROR_MESSAGE);
                     Task task = new Task(descriere);
                     taskListModel.addElement(task);
                     descriereTask.setText("");
                     task.finalization();
+
 
 
  JButton statusB = new JButton("Toggle Status");
